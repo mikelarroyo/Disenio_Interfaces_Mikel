@@ -939,7 +939,7 @@ there.
 /* Larger than Desktop HD */
 :root {
   --fuenteGeneral:12pt Verdana, Arial;
-  --colorPrincipal: #B38D97;
+  --colorPrincipal: #be3f61;
   --colorSecundario: #D5ACA9;
   --colorTerciario: #EBCFB2;
   --colorCuaternario:#d1a7b1;
@@ -979,7 +979,7 @@ there.
     margin-left: 0;
   }
   /*generado */
-  .one-lg.columns {
+  .one-lg.column {
     width: 4.6666666667%;
   }
   .one-lg.columns {
@@ -1175,7 +1175,7 @@ there.
   }
 }
 a {
-  color: --var(--colorPrincipal);
+  color: var(--colorPrincipal);
 }
 
 /* MENU HORIZONTAL */

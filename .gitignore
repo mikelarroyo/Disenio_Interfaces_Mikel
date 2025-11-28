@@ -1,0 +1,6 @@
+# Directorio de dependencias de Node
+node_modules/
+
+# Archivos de depuración y logs (opcional, pero recomendado)
+npm-debug.log*
+.DS_Store

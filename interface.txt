@@ -1,7 +1,626 @@
-Trabajo interfaces: 
- - Vamos a hacer cualquier página que queramos con bootstraps 
- - Coger y la aplicacion que tenemos que hacemos con mac lo vamos a hacer con boostrap. 
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "gemini-model",
+  "elements": [
+    // --- WIREFRAME 1: INICIO (Datos Diarios Actuales) ---
+    {
+      "type": "rectangle",
+      "x": 0,
+      "y": 0,
+      "width": 1000,
+      "height": 900,
+      "backgroundColor": "transparent",
+      "strokeColor": "#1e1e1e",
+      "strokeStyle": "solid",
+      "fillStyle": "hachure",
+      "strokeWidth": 2
+    },
+    {
+      "type": "text",
+      "x": 50,
+      "y": 20,
+      "text": "1. INICIO (Datos Diarios Actuales)",
+      "fontSize": 20,
+      "strokeColor": "#1e1e1e"
+    },
+    // HEADER
+    {
+      "type": "rectangle",
+      "x": 0,
+      "y": 60,
+      "width": 1000,
+      "height": 50,
+      "backgroundColor": "#3a5795",
+      "strokeColor": "#1e1e1e",
+      "fillStyle": "solid"
+    },
+    {
+      "type": "text",
+      "x": 20,
+      "y": 75,
+      "text": "SOMOSDELPRIETO METEO | [INICIO] | DATOS | TABLAS | INFO PROYECTO",
+      "fontSize": 16,
+      "strokeColor": "#f0f0f0"
+    },
+    // PANEL PRINCIPAL - SINOPSIS
+    {
+      "type": "rectangle",
+      "x": 50,
+      "y": 140,
+      "width": 900,
+      "height": 150,
+      "backgroundColor": "#87ceeb",
+      "strokeColor": "#1e1e1e",
+      "fillStyle": "solid",
+      "opacity": 0.8
+    },
+    {
+      "type": "text",
+      "x": 70,
+      "y": 155,
+      "text": "Situación Actual\nActualizado a las [HH:MM]",
+      "fontSize": 14,
+      "strokeColor": "#1e1e1e"
+    },
+    {
+      "type": "text",
+      "x": 70,
+      "y": 200,
+      "text": "Sinopsis Breve: Tarde fría con tendencia a descender la temperatura...",
+      "fontSize": 18,
+      "strokeColor": "#1e1e1e"
+    },
+    // SECCIÓN DE DATOS EN TIEMPO REAL (3 COLUMNAS)
+    // Columna 1: Temperatura y Humedad
+    {
+      "type": "rectangle",
+      "x": 50,
+      "y": 320,
+      "width": 280,
+      "height": 500,
+      "backgroundColor": "#f0f0f0",
+      "strokeColor": "#1e1e1e",
+      "fillStyle": "hachure"
+    },
+    {
+      "type": "text",
+      "x": 100,
+      "y": 340,
+      "text": "TEMPERATURA\n10.3 °C (GRANDE)\nMáx: 12.5°C | Mín: 6.0°C",
+      "fontSize": 18,
+      "strokeColor": "#1e1e1e"
+    },
+    {
+      "type": "text",
+      "x": 100,
+      "y": 480,
+      "text": "HUMEDAD RELATIVA\n85 % (GRANDE)\nMáx: 92 % | Mín: 65 %",
+      "fontSize": 18,
+      "strokeColor": "#1e1e1e"
+    },
+    // Columna 2: Viento y Presión
+    {
+      "type": "rectangle",
+      "x": 360,
+      "y": 320,
+      "width": 280,
+      "height": 500,
+      "backgroundColor": "#f0f0f0",
+      "strokeColor": "#1e1e1e",
+      "fillStyle": "hachure"
+    },
+    {
+      "type": "text",
+      "x": 410,
+      "y": 340,
+      "text": "VELOCIDAD DEL VIENTO\n15 km/h (GRANDE)\nRacha Máx: 25 km/h",
+      "fontSize": 18,
+      "strokeColor": "#1e1e1e"
+    },
+    {
+      "type": "text",
+      "x": 410,
+      "y": 480,
+      "text": "PRESIÓN ATMOSFÉRICA\n1012 hPa (GRANDE)\n[GRÁFICO TENDENCIA 24h]",
+      "fontSize": 18,
+      "strokeColor": "#1e1e1e"
+    },
+    {
+      "type": "line",
+      "x": 430,
+      "y": 580,
+      "end": [590, 680],
+      "strokeColor": "#3a5795",
+      "strokeWidth": 2
+    },
+    // Columna 3: Lluvia y Radiación UV
+    {
+      "type": "rectangle",
+      "x": 670,
+      "y": 320,
+      "width": 280,
+      "height": 500,
+      "backgroundColor": "#f0f0f0",
+      "strokeColor": "#1e1e1e",
+      "fillStyle": "hachure"
+    },
+    {
+      "type": "text",
+      "x": 720,
+      "y": 340,
+      "text": "LLUVIA ACUMULADA\n3.2 mm (GRANDE)\nMes: 45.1 mm | Año: 300 mm",
+      "fontSize": 18,
+      "strokeColor": "#1e1e1e"
+    },
+    {
+      "type": "text",
+      "x": 720,
+      "y": 480,
+      "text": "RADIACIÓN UV\nÍndice 1 (BAJO) (GRANDE)\nMáx UV hoy: Índice 5",
+      "fontSize": 18,
+      "strokeColor": "#1e1e1e"
+    },
+    // FOOTER
+    {
+      "type": "rectangle",
+      "x": 0,
+      "y": 850,
+      "width": 1000,
+      "height": 50,
+      "backgroundColor": "#ccc",
+      "strokeColor": "#1e1e1e",
+      "fillStyle": "solid"
+    },
+    {
+      "type": "text",
+      "x": 400,
+      "y": 865,
+      "text": "FOOTER | Copyright | Cursos Participantes",
+      "fontSize": 14,
+      "strokeColor": "#1e1e1e"
+    },
 
-Ejemplo: o vamos a utilizar pug ni sass ni nada, solo quiero juntar trozos algo parecido utilizando bootstraps
-darle una vuelta a la ayuda. copiar y pegar y que las cosas exploten.
-Desde 0 con bootstrap directamente, que sea visualmente parecido.
+    // --- WIREFRAME 2: DATOS (Gráficos) ---
+    {
+      "type": "rectangle",
+      "x": 1050,
+      "y": 0,
+      "width": 1000,
+      "height": 900,
+      "backgroundColor": "transparent",
+      "strokeColor": "#1e1e1e",
+      "strokeStyle": "solid",
+      "fillStyle": "hachure",
+      "strokeWidth": 2
+    },
+    {
+      "type": "text",
+      "x": 1100,
+      "y": 20,
+      "text": "2. DATOS (Gráficos y Tendencias)",
+      "fontSize": 20,
+      "strokeColor": "#1e1e1e"
+    },
+    // HEADER
+    {
+      "type": "rectangle",
+      "x": 1050,
+      "y": 60,
+      "width": 1000,
+      "height": 50,
+      "backgroundColor": "#3a5795",
+      "strokeColor": "#1e1e1e",
+      "fillStyle": "solid"
+    },
+    {
+      "type": "text",
+      "x": 1070,
+      "y": 75,
+      "text": "SOMOSDELPRIETO METEO | INICIO | [DATOS] | TABLAS | INFO PROYECTO",
+      "fontSize": 16,
+      "strokeColor": "#f0f0f0"
+    },
+    // BARRA DE FILTROS
+    {
+      "type": "rectangle",
+      "x": 1100,
+      "y": 130,
+      "width": 900,
+      "height": 40,
+      "backgroundColor": "#f0f0f0",
+      "strokeColor": "#1e1e1e",
+      "fillStyle": "solid"
+    },
+    {
+      "type": "text",
+      "x": 1110,
+      "y": 142,
+      "text": "Variable: [TEMP ▼] | Rango: [Último Mes ▼] | Fecha: [DD/MM/YYYY]",
+      "fontSize": 14,
+      "strokeColor": "#1e1e1e"
+    },
+    // ÁREA DE GRÁFICOS (4 PANELES)
+    // Gráfico 1: Temperatura
+    {
+      "type": "rectangle",
+      "x": 1100,
+      "y": 200,
+      "width": 430,
+      "height": 300,
+      "backgroundColor": "#fff",
+      "strokeColor": "#1e1e1e",
+      "fillStyle": "hachure"
+    },
+    {
+      "type": "text",
+      "x": 1110,
+      "y": 210,
+      "text": "Gráfico 1: TEMPERATURA (Media, Máx, Mín)",
+      "fontSize": 16,
+      "strokeColor": "#1e1e1e"
+    },
+    {
+      "type": "line",
+      "x": 1130,
+      "y": 450,
+      "end": [1500, 250],
+      "strokeColor": "red",
+      "strokeWidth": 2
+    },
+    // Gráfico 2: Lluvia
+    {
+      "type": "rectangle",
+      "x": 1570,
+      "y": 200,
+      "width": 430,
+      "height": 300,
+      "backgroundColor": "#fff",
+      "strokeColor": "#1e1e1e",
+      "fillStyle": "hachure"
+    },
+    {
+      "type": "text",
+      "x": 1580,
+      "y": 210,
+      "text": "Gráfico 2: PRECIPITACIONES (Acumulado Mensual)",
+      "fontSize": 16,
+      "strokeColor": "#1e1e1e"
+    },
+    {
+      "type": "line",
+      "x": 1600,
+      "y": 450,
+      "end": [1970, 450],
+      "strokeColor": "#00f",
+      "strokeWidth": 2
+    },
+    {
+      "type": "rectangle",
+      "x": 1610,
+      "y": 400,
+      "width": 10,
+      "height": 50,
+      "backgroundColor": "#00f",
+      "strokeColor": "#00f",
+      "fillStyle": "solid"
+    },
+    // Gráfico 3: Viento
+    {
+      "type": "rectangle",
+      "x": 1100,
+      "y": 540,
+      "width": 430,
+      "height": 300,
+      "backgroundColor": "#fff",
+      "strokeColor": "#1e1e1e",
+      "fillStyle": "hachure"
+    },
+    {
+      "type": "text",
+      "x": 1110,
+      "y": 550,
+      "text": "Gráfico 3: VELOCIDAD Y DIRECCIÓN DEL VIENTO (Rosa)",
+      "fontSize": 16,
+      "strokeColor": "#1e1e1e"
+    },
+    {
+      "type": "ellipse",
+      "x": 1250,
+      "y": 600,
+      "width": 150,
+      "height": 150,
+      "strokeColor": "#999",
+      "fillStyle": "hachure"
+    },
+    // Gráfico 4: Presión y Humedad
+    {
+      "type": "rectangle",
+      "x": 1570,
+      "y": 540,
+      "width": 430,
+      "height": 300,
+      "backgroundColor": "#fff",
+      "strokeColor": "#1e1e1e",
+      "fillStyle": "hachure"
+    },
+    {
+      "type": "text",
+      "x": 1580,
+      "y": 550,
+      "text": "Gráfico 4: PRESIÓN ATMOSFÉRICA Y HUMEDAD",
+      "fontSize": 16,
+      "strokeColor": "#1e1e1e"
+    },
+    {
+      "type": "line",
+      "x": 1600,
+      "y": 800,
+      "end": [1970, 600],
+      "strokeColor": "#3a5795",
+      "strokeWidth": 2
+    },
+    // FOOTER
+    {
+      "type": "rectangle",
+      "x": 1050,
+      "y": 850,
+      "width": 1000,
+      "height": 50,
+      "backgroundColor": "#ccc",
+      "strokeColor": "#1e1e1e",
+      "fillStyle": "solid"
+    },
+
+    // --- WIREFRAME 3: TABLAS (Datos por Día) ---
+    {
+      "type": "rectangle",
+      "x": 0,
+      "y": 950,
+      "width": 1000,
+      "height": 700,
+      "backgroundColor": "transparent",
+      "strokeColor": "#1e1e1e",
+      "strokeStyle": "solid",
+      "fillStyle": "hachure",
+      "strokeWidth": 2
+    },
+    {
+      "type": "text",
+      "x": 50,
+      "y": 970,
+      "text": "3. TABLAS (Datos Históricos Detallados por Día)",
+      "fontSize": 20,
+      "strokeColor": "#1e1e1e"
+    },
+    // HEADER
+    {
+      "type": "rectangle",
+      "x": 0,
+      "y": 1010,
+      "width": 1000,
+      "height": 50,
+      "backgroundColor": "#3a5795",
+      "strokeColor": "#1e1e1e",
+      "fillStyle": "solid"
+    },
+    {
+      "type": "text",
+      "x": 20,
+      "y": 1025,
+      "text": "SOMOSDELPRIETO METEO | INICIO | DATOS | [TABLAS] | INFO PROYECTO",
+      "fontSize": 16,
+      "strokeColor": "#f0f0f0"
+    },
+    // BARRA DE FILTROS / BÚSQUEDA
+    {
+      "type": "rectangle",
+      "x": 50,
+      "y": 1080,
+      "width": 900,
+      "height": 40,
+      "backgroundColor": "#f0f0f0",
+      "strokeColor": "#1e1e1e",
+      "fillStyle": "solid"
+    },
+    {
+      "type": "text",
+      "x": 70,
+      "y": 1092,
+      "text": "Selector de Fecha: [DD/MM/YYYY ▼] | [ Cargar Datos ]",
+      "fontSize": 14,
+      "strokeColor": "#1e1e1e"
+    },
+    // TABLA DE RESUMEN DIARIO
+    {
+      "type": "text",
+      "x": 50,
+      "y": 1150,
+      "text": "Resumen del Día [DD/MM/YYYY]",
+      "fontSize": 16,
+      "strokeColor": "#1e1e1e"
+    },
+    {
+      "type": "rectangle",
+      "x": 50,
+      "y": 1180,
+      "width": 900,
+      "height": 300,
+      "backgroundColor": "#fff",
+      "strokeColor": "#1e1e1e",
+      "fillStyle": "hachure"
+    },
+    {
+      "type": "text",
+      "x": 100,
+      "y": 1195,
+      "text": "| Hora | Temp (°C) | Humedad (%) | Presión (hPa) | Viento (km/h) | Racha Máx (km/h) | Lluvia Acum. (mm) | UV |",
+      "fontSize": 14,
+      "strokeColor": "#1e1e1e"
+    },
+    {
+      "type": "line",
+      "x": 50,
+      "y": 1220,
+      "end": [950, 1220],
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 1
+    },
+    {
+      "type": "text",
+      "x": 100,
+      "y": 1230,
+      "text": "Datos por hora (Filas de datos)",
+      "fontSize": 14,
+      "strokeColor": "#999"
+    },
+    {
+      "type": "rectangle",
+      "x": 50,
+      "y": 1480,
+      "width": 900,
+      "height": 30,
+      "backgroundColor": "#ddd",
+      "strokeColor": "#1e1e1e",
+      "fillStyle": "solid"
+    },
+    {
+      "type": "text",
+      "x": 70,
+      "y": 1487,
+      "text": "Fila de Totales/Medias del Día",
+      "fontSize": 14,
+      "strokeColor": "#1e1e1e"
+    },
+    // OPCIONES DE EXPORTACIÓN
+    {
+      "type": "rectangle",
+      "x": 50,
+      "y": 1530,
+      "width": 150,
+      "height": 40,
+      "backgroundColor": "#87ceeb",
+      "strokeColor": "#1e1e1e",
+      "fillStyle": "solid"
+    },
+    {
+      "type": "text",
+      "x": 70,
+      "y": 1542,
+      "text": "Exportar a CSV",
+      "fontSize": 14,
+      "strokeColor": "#1e1e1e"
+    },
+    // FOOTER
+    {
+      "type": "rectangle",
+      "x": 0,
+      "y": 1600,
+      "width": 1000,
+      "height": 50,
+      "backgroundColor": "#ccc",
+      "strokeColor": "#1e1e1e",
+      "fillStyle": "solid"
+    },
+
+    // --- WIREFRAME 4: INFO PROYECTO ---
+    {
+      "type": "rectangle",
+      "x": 1050,
+      "y": 950,
+      "width": 1000,
+      "height": 700,
+      "backgroundColor": "transparent",
+      "strokeColor": "#1e1e1e",
+      "strokeStyle": "solid",
+      "fillStyle": "hachure",
+      "strokeWidth": 2
+    },
+    {
+      "type": "text",
+      "x": 1100,
+      "y": 970,
+      "text": "4. INFO PROYECTO (Información)",
+      "fontSize": 20,
+      "strokeColor": "#1e1e1e"
+    },
+    // HEADER
+    {
+      "type": "rectangle",
+      "x": 1050,
+      "y": 1010,
+      "width": 1000,
+      "height": 50,
+      "backgroundColor": "#3a5795",
+      "strokeColor": "#1e1e1e",
+      "fillStyle": "solid"
+    },
+    {
+      "type": "text",
+      "x": 1070,
+      "y": 1025,
+      "text": "SOMOSDELPRIETO METEO | INICIO | DATOS | TABLAS | [INFO PROYECTO]",
+      "fontSize": 16,
+      "strokeColor": "#f0f0f0"
+    },
+    // CONTENIDO
+    {
+      "type": "text",
+      "x": 1100,
+      "y": 1100,
+      "text": "TÍTULO PRINCIPAL: Estación Meteorológica SomosDelPrieto",
+      "fontSize": 18,
+      "strokeColor": "#1e1e1e"
+    },
+    // SECCIÓN 1
+    {
+      "type": "text",
+      "x": 1100,
+      "y": 1150,
+      "text": "SECCIÓN 1: INTRODUCCIÓN Y OBJETIVOS\n[Texto descriptivo sobre la colaboración interdisciplinar...]",
+      "fontSize": 14,
+      "strokeColor": "#1e1e1e"
+    },
+    // SECCIÓN 2
+    {
+      "type": "text",
+      "x": 1100,
+      "y": 1250,
+      "text": "SECCIÓN 2: FASE I (2020-2021)\n- Mantenimiento: Estructura de chapa\n- Bachillerato: Pluviómetro\n- Informática: Servidor y web inicial\n- Etc.",
+      "fontSize": 14,
+      "strokeColor": "#1e1e1e"
+    },
+    // SECCIÓN 3
+    {
+      "type": "text",
+      "x": 1100,
+      "y": 1400,
+      "text": "SECCIÓN 3: FASE II (Curso Actual)\n- Nuevos Datos: Anemómetro (Velocidad del Viento)\n- 3º ESO (F y Q): Reparación pluviómetro y construcción anemómetro\n- 2º DAW: Nuevo Backend (DB) y Nuevo Frontend (Esta web)",
+      "fontSize": 14,
+      "strokeColor": "#1e1e1e"
+    },
+    // SECCIÓN 4
+    {
+      "type": "text",
+      "x": 1100,
+      "y": 1550,
+      "text": "SECCIÓN 4: TECNOLOGÍA\n- Sensores: Temp, Presión, Humedad, UV, Lluvia, Viento\n- Base de Datos: MySQL (mediciones, lluvia)",
+      "fontSize": 14,
+      "strokeColor": "#1e1e1e"
+    },
+    // FOOTER
+    {
+      "type": "rectangle",
+      "x": 1050,
+      "y": 1600,
+      "width": 1000,
+      "height": 50,
+      "backgroundColor": "#ccc",
+      "strokeColor": "#1e1e1e",
+      "fillStyle": "solid"
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#fcfcfc"
+  }
+}
